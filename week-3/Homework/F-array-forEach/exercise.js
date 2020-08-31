@@ -7,9 +7,23 @@
   An array with numbers 1-15 has been provided.
 */
 
-var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+var array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 
-/* EXPECTED OUTPUT */
+function filter() {
+  for (let i = 0; i < 15; i++) {
+    if (array[i] % 3 == 0 && array[i] % 5 == 0) {
+      console.log("FizzBuzz")
+    } else if (array[i] % 3 == 0) {
+      console.log("Fizz")
+    } else if (array[i] % 5 == 0) {
+      console.log("Buzz")
+    } else {
+      console.log(array[i])
+    }
+  }
+}
+console.log(array.forEach(filter))
+
 
 /*
 1
@@ -28,3 +42,17 @@ var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 14
 'FizzBuzz'
 */
+
+// function filter() {
+//   for (let i = 0; i < 15; i++) {
+//     if (array[i] % 3 == 0 && array[i] % 5 == 0) {
+//       console.log("FizzBuzz")
+//     } else if (array[i] % 3 == 0) {
+//       console.log("Fizz")
+//     } else if (array[i] % 5 == 0) {
+//       console.log("Buzz")
+//     } else {
+//       console.log(array[i])
+//     }
+//   }
+// }

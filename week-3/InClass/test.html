@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var array1 = [
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+      ];
+
+      function countSheeps(arrayOfSheep) {
+        let sum = 0;
+        for (let i = 0; i < arrayOfSheep.length; i++) {
+          let presentSheep = arrayOfSheep[i];
+          if (presentSheep === true) {
+            let presentSheep = 1;
+            sum += 1;
+          }
+        }
+        return sum;
+      }
+
+      console.log(countSheeps(array1));
+    </script>
+  </body>
+</html>

@@ -7,9 +7,13 @@
 */
 
 let n = 10;
+let i = 0;
 
-function sumTillNum(num){
-	//your code here
+function sumTillNum() {
+    while (i <= n) {
+        console.log(((i * i) + i) / 2);
+        i++;
+    }
 }
 
 console.log("Sum from 0 to " + n + " is: " + sumTillNum(n));

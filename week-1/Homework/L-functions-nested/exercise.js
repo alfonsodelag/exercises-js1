@@ -17,6 +17,7 @@ const percentagesOfMentors = () => {
     var total = numberOfStudents+numberOfMentors;
     return console.log(Math.round(numberOfMentors/total));
 }
+percentagesOfMentors(15,8);
 
 
 
@@ -25,6 +26,7 @@ const message = () => {
     let mentorsPercentage = percentagesOfMentors();
     return console.log("The percentage of Students is " + studentPercentage + " and the percentage of mentors is " + mentorsPercentage);
 }
+
 percentagesOfStudents();
 percentagesOfMentors();
 message();
